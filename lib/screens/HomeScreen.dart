@@ -14,17 +14,16 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int _currentIndex = 0;
+
+  List<Widget> screens = [
+    const HomeScreenDisplay(),
+    const ProductsScreen(),
+    const CartScreen(),
+    const ProfileScreen()
+  ];
   @override
   Widget build(BuildContext context) {
-    int _currentIndex = 0;
-
-    final List<Widget> _screens = [
-      const HomeScreenDisplay(),
-      const ProductsScreen(),
-      const CartScreen(),
-      const ProfileScreen()
-    ];
-
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -47,12 +46,8 @@ class _HomeScreenState extends State<HomeScreen> {
           },
         ),
       ),
-      body: IndexedStack(
-        index: _currentIndex,
-        children: _screens,
-      ),
+      body: screens[_currentIndex],
       bottomNavigationBar: MyBottomNavigationBar(
-        currentIndex: _currentIndex,
         onTap: (index) {
           setState(() {
             _currentIndex = index;
