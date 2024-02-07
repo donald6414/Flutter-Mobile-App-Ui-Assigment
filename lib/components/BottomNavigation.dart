@@ -4,7 +4,6 @@ class MyBottomNavigationBar extends StatelessWidget {
   final ValueChanged<int> onTap;
 
   MyBottomNavigationBar({required this.onTap});
-
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
