@@ -51,7 +51,7 @@ class CartCard extends StatelessWidget {
           ClipRRect(
             borderRadius: const BorderRadius.all(Radius.circular(12.0)),
             child: Image.network(
-              "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "https://img.freepik.com/free-photo/medium-shot-woman-with-yellow-sunglasses_23-2149068952.jpg?w=826&t=st=1707381882~exp=1707382482~hmac=9cffc8c5f56820b6484dd12806574a5c4075d2ec08d714786672b1b90e48d094",
               fit: BoxFit.contain,
               width: 100, // Set the width as needed
             ),

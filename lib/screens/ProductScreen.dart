@@ -13,7 +13,7 @@ class ProductScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(
                 8.0), // Adjust the border radius as needed
             child: Image.network(
-              "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "https://img.freepik.com/free-photo/portrait-pretty-lady-red-warm-jacket-stylish-eyeglasses_197531-15046.jpg?w=2000&t=st=1707381738~exp=1707382338~hmac=16116c232c8a09beef18b7164126e7af1ee90a62c8a60ed82289894b74287974",
               fit: BoxFit.cover,
               width: 40, // Set the width as needed
               height: 40, // Set the height as needed
@@ -35,7 +35,7 @@ class ProductScreen extends StatelessWidget {
             SizedBox(
               width: fullScreenWidth,
               child: Image.network(
-                  "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+                  "https://img.freepik.com/free-photo/medium-shot-woman-with-yellow-sunglasses_23-2149068952.jpg?w=826&t=st=1707381882~exp=1707382482~hmac=9cffc8c5f56820b6484dd12806574a5c4075d2ec08d714786672b1b90e48d094"),
             ),
             const Padding(
               padding: EdgeInsets.all(16.0),

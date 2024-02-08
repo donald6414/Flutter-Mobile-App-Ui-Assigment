@@ -24,7 +24,7 @@ class ProfileImage extends StatelessWidget {
         borderRadius:
             BorderRadius.circular(100.0), // Adjust the border radius as needed
         child: Image.network(
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://img.freepik.com/free-photo/woman-with-beauty-long-brown-hair-fashion-model-with-long-straight-hair-fashion-model-posing_186202-8460.jpg?w=1800&t=st=1707382014~exp=1707382614~hmac=684a7010c53cfb0cf976a5448217756cfdda5faaf26d5e6895e5c7105eb7dd09",
           fit: BoxFit.cover,
           width: 200, // Set the width as needed
           height: 200, // Set the height as needed
