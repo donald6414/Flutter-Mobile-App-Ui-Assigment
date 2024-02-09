@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
@@ -70,12 +71,12 @@ class CartCard extends StatelessWidget {
                           fontSize: 20.0, fontWeight: FontWeight.w500),
                     ),
                     Icon(
-                      Icons.delete,
+                      CupertinoIcons.delete,
                       color: Colors.red,
                     ),
                   ],
                 ),
-                Text("45.9"),
+                Text("\$ 45.9"),
                 Row(
                   children: [ColorCircle(), Size()],
                 )
@@ -135,11 +136,11 @@ class CartSummary extends StatelessWidget {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [Text("Total:"), Text("127.7")],
+          children: [Text("Total:"), Text("\$ 127.7")],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [Text("Shipping:"), Text("0.0")],
+          children: [Text("Shipping:"), Text("\$ 0.0")],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -148,7 +149,7 @@ class CartSummary extends StatelessWidget {
               "Grant Total:",
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
             ),
-            Text("127.0",
+            Text("\$ 127.0",
                 style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500))
           ],
         ),

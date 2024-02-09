@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -24,7 +25,7 @@ class ProfileImage extends StatelessWidget {
         borderRadius:
             BorderRadius.circular(100.0), // Adjust the border radius as needed
         child: Image.network(
-          "https://img.freepik.com/free-photo/woman-with-beauty-long-brown-hair-fashion-model-with-long-straight-hair-fashion-model-posing_186202-8460.jpg?w=1800&t=st=1707382014~exp=1707382614~hmac=684a7010c53cfb0cf976a5448217756cfdda5faaf26d5e6895e5c7105eb7dd09",
+          "https://pbs.twimg.com/profile_images/909322827395883008/zXKiGbej_400x400.jpg",
           fit: BoxFit.cover,
           width: 200, // Set the width as needed
           height: 200, // Set the height as needed
@@ -42,7 +43,7 @@ class ShortDescription extends StatelessWidget {
     return const Column(
       children: [
         Text(
-          "Elizerbeth Keen",
+          "Raymond Reddington",
           style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800),
         ),
         Text(
@@ -115,7 +116,7 @@ class FullDescription extends StatelessWidget {
                       elevation: 2.0,
                       child: Padding(
                         padding: EdgeInsets.all(10.0),
-                        child: Icon(Icons.heart_broken),
+                        child: Icon(CupertinoIcons.heart),
                       ),
                     ),
                     Text(

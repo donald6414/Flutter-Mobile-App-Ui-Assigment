@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProductScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class ProductScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(
                 8.0), // Adjust the border radius as needed
             child: Image.network(
-              "https://img.freepik.com/free-photo/portrait-pretty-lady-red-warm-jacket-stylish-eyeglasses_197531-15046.jpg?w=2000&t=st=1707381738~exp=1707382338~hmac=16116c232c8a09beef18b7164126e7af1ee90a62c8a60ed82289894b74287974",
+              "https://pbs.twimg.com/profile_images/909322827395883008/zXKiGbej_400x400.jpg",
               fit: BoxFit.cover,
               width: 40, // Set the width as needed
               height: 40, // Set the height as needed
@@ -22,7 +23,7 @@ class ProductScreen extends StatelessWidget {
         ],
         // title: const Text("E-commerse"),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(CupertinoIcons.back),
           onPressed: () {
             Navigator.pop(context);
           },

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/ProductScreen.dart';
@@ -67,13 +68,29 @@ class ProductCard extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  ClipRRect(
-                    borderRadius: const BorderRadius.all(Radius.circular(12.0)),
-                    child: Image.network(
-                      "https://img.freepik.com/free-photo/medium-shot-woman-with-yellow-sunglasses_23-2149068952.jpg?w=826&t=st=1707381882~exp=1707382482~hmac=9cffc8c5f56820b6484dd12806574a5c4075d2ec08d714786672b1b90e48d094",
-                      fit: BoxFit.contain,
-                      width: halfScreenWidth, // Set the width as needed
-                    ),
+                  Stack(
+                    alignment: Alignment.topRight,
+                    children: [
+                      ClipRRect(
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(12.0)),
+                        child: Image.network(
+                          "https://img.freepik.com/free-photo/medium-shot-woman-with-yellow-sunglasses_23-2149068952.jpg?w=826&t=st=1707381882~exp=1707382482~hmac=9cffc8c5f56820b6484dd12806574a5c4075d2ec08d714786672b1b90e48d094",
+                          fit: BoxFit.contain,
+                          width: halfScreenWidth, // Set the width as needed
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.all(10),
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          child: Icon(
+                            CupertinoIcons.heart_fill,
+                            color: Colors.red,
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ],
               ),
@@ -83,7 +100,7 @@ class ProductCard extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.w800),
             ),
             const Text(
-              "45.9",
+              "\$ 45.9",
             )
           ],
         ),
